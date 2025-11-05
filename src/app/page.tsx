@@ -1,7 +1,10 @@
 import Header from '@/components/header'
+import CTASection from '@/module/cta'
 import FeaturesSection from '@/module/features'
+import Footer from '@/module/footer'
 import HeroSection from '@/module/hero'
 import HowItWorksSection from '@/module/howitworks'
+import PricingSection from '@/module/pricing'
 import TemplatesSection from '@/module/templates'
 
 const page = () => {
@@ -12,6 +15,9 @@ const page = () => {
         <HowItWorksSection />
         <FeaturesSection />
         <TemplatesSection />
+        <PricingSection />
+        <CTASection />
+        <Footer />
     </div>
   )
 }

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { Button } from '../ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet'
 import { useState } from 'react'
+import AuthModal from '../auth/auth.modal'
 
 const navItems = [
     { name: "Features", href: "#features", icon: Zap },
@@ -17,6 +18,7 @@ const navItems = [
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [isAuthOpen, setIsAuthOpen] = useState(false)
 
     return (
         <header className='fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-primary/10'>
@@ -84,9 +86,10 @@ const Header = () => {
                             </div>
                         </SheetContent>
                     </Sheet>
+
+                    <AuthModal isOpen={isOpen} onOpenChange={setIsAuthOpen} />
                 </div>
             </div>
-
         </header>
     )
 }

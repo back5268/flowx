@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
     ArrowRight,
@@ -122,6 +123,10 @@ const TemplatesSection = () => {
                         <p className="text-muted-foreground mb-6">
                             Explore our complete library of workflow templates for every use case imaginable.
                         </p>
+                        <Button size="lg" variant="hero" className="text-lg px-8">
+                            Browse All Templates
+                            <ArrowRight className="ml-2 w-5 h-5" />
+                        </Button>
                     </div>
                 </div>
             </div>
