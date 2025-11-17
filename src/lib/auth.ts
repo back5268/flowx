@@ -7,7 +7,7 @@ import { nextCookies } from 'better-auth/next-js'
 import { EmailService } from "@/services/emailService";
 
 const sql = neon(process.env.DATABASE_URL!)
-const db = drizzle(sql)
+export const db = drizzle(sql)
 
 export const auth = betterAuth({
     database: drizzleAdapter(db, {
